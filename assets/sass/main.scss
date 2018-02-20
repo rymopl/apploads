@@ -1,8 +1,13 @@
+@import 'variables';
 @import 'normalize';
 // @import 'foundation';
+@import 'font-icon';
 @import '../../node_modules/foundation-sites/scss/_global';
 @import '../../node_modules/foundation-sites/scss/grid/grid';
 @import '../../node_modules/foundation-sites/scss/util/flex';
 @import '../../node_modules/foundation-sites/scss/components/flex';
 @include foundation-grid;
 @include foundation-flex-classes;
+
+@import 'typography';
+@import 'header';
