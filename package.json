@@ -1,0 +1,22 @@
+{
+  "name": "apploads",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://rymopl@github.com/rymopl/apploads.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rymopl/apploads/issues"
+  },
+  "homepage": "https://github.com/rymopl/apploads#readme"
+}
