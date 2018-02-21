@@ -1,0 +1,30 @@
+.btn {
+    text-decoration: none;
+}
+
+.btn-white {
+    font-size: $font-small;
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent;
+    position: relative;
+    padding: 14px 0 ;
+    &:before {
+        height: calc(100% + 2px);
+        width: 3px;
+        content: '';
+        background: #fff;
+        position: absolute;
+        top: -2px;
+        left: -4px;
+    }
+    &:before {
+        height: calc(100% + 2px);
+        width: 3px;
+        content: '';
+        background: #fff;
+        position: absolute;
+        bottom: -2px;
+        right: -4px;
+    }
+}

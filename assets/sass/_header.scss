@@ -1,6 +1,13 @@
+body {
+    padding: 20px;
+    background: #ffffff;
+}
 header {
     position: relative;
     text-align: center;
+    img {
+        max-width: 100%;
+    }
     .header-content {
         position: absolute;
         width: 100%;
@@ -21,5 +28,9 @@ header {
         font-size: rem-calc(64);
         font-weight: 400;
         color: #fff;
+    }
+    .btn {
+        width: 310px;
+        display: inline-block;
     }
 }
