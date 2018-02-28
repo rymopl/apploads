@@ -19,9 +19,7 @@
     "url": "https://github.com/rymopl/apploads/issues"
   },
   "homepage": "https://github.com/rymopl/apploads#readme",
-  "dependencies": {
-    
-  },
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.9.2",
