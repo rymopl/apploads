@@ -8,7 +8,7 @@ var gulp = require('gulp'),
         return gulp.src('assets/sass/main.scss')
             .pipe(sass().on('error', sass.logError))
             .pipe(concatJs('apploads.css'))
-            .pipe(cleanCSS({compatibility: 'ie8'}))
+            // .pipe(cleanCSS({compatibility: 'ie8'}))
             .pipe(gulp.dest('css/'));
     });
     

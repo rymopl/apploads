@@ -2,3 +2,60 @@ h1 {
     font-family: $font-serif;
     font-weight: 400;
 }
+
+h2 {
+    font-family: $font-sans-serif;
+    font-weight: 600;
+    font-size: rem-calc(18);
+    line-height: rem-calc(18);
+    letter-spacing: 8px;
+}
+
+h3 {
+    font-family: $font-serif;
+    font-weight: 400;
+    font-size: rem-calc(24);
+    line-height: rem-calc(35);
+    letter-spacing: 1px;
+    color: #000;
+}
+
+h4 {
+    font-family: $font-sans-serif;
+    font-weight: 400;
+    font-size: rem-calc(14);
+    line-height: rem-calc(14);
+    letter-spacing: 1px;
+    color: #000;
+    span {
+        color: #878787;
+    }
+    a {
+        color: inherit;
+    }
+}
+
+.episode-label {
+    color: #878787;
+    font-size: rem-calc(14);
+    line-height: rem-calc(18);
+    letter-spacing: 6.22px;
+    display: block;
+    margin-top: rem-calc(8);
+}
+
+.section-content {
+    font-family: $font-serif;
+    font-weight: 400;
+    font-size: rem-calc(36);
+    line-height: rem-calc(45);
+    letter-spacing: 1.5px;
+}
+
+.simple-link {
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+    letter-spacing: 0.04px;
+    color: #000;
+    display: block;
+}

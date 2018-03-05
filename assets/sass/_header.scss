@@ -1,17 +1,9 @@
-body {
-    padding: 20px;
-    background: #ffffff;
-}
-.container {
-    max-width: 1180px;
-    width: 100%;
-}
-
 header {
     position: relative;
     text-align: center;
     img {
         max-width: 100%;
+        display: block;
     }
     .header-content {
         position: absolute;
@@ -31,6 +23,7 @@ header {
     h2 {
         font-family: $font-serif;
         font-size: rem-calc(64);
+        line-height: rem-calc(75);
         font-weight: 400;
         color: #fff;
     }

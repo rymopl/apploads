@@ -1,0 +1,19 @@
+.podcast-item {
+    margin-top: rem-calc(60);
+    margin-bottom: rem-calc(100);
+    h3 {
+        margin-top: rem-calc(10);
+    }
+    .simple-link {
+        margin-top: rem-calc(22);
+    }
+}
+
+.caster {
+    display: flex;
+    .thumb-small {
+        margin-right: rem-calc(17);
+        margin-bottom: rem-calc(25);
+    }
+    
+}

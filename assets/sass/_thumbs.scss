@@ -1,0 +1,50 @@
+.thumb {
+    border: 1px solid #E9E9E9;
+    text-align: center;
+    @extend .align-middle;
+    display: flex;
+    img {
+        max-width: 100%;
+    }
+}
+
+.thumb-large {
+    @extend .thumb;
+    width: 140px;
+    height: 140px;
+    padding: 10px;
+}
+
+.thumb-small {
+    @extend .thumb;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.podcast-thumb {
+    span {
+        font-family: $font-serif;
+        color: #fff;
+        font-size: rem-calc(64);
+        letter-spacing: -4px;
+        font-weight: 700;
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        line-height: 118px;
+        background-image: url(../img/cover-1.svg);
+        background-position: center;
+        background-size: cover;
+    }
+    &.podcast-thumb-2 {
+        span {
+            background-image: url(../img/cover-2.svg);
+        }
+    }
+    &.podcast-thumb-3 {
+        span {
+            background-image: url(../img/cover-3.svg);
+        }
+    }
+}
