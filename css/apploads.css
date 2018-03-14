@@ -1111,7 +1111,8 @@ header {
   text-align: center; }
   header img {
     max-width: 100%;
-    display: block; }
+    display: block;
+    margin: auto; }
   header .header-content {
     position: absolute;
     width: 100%;
@@ -1314,7 +1315,7 @@ body {
   background-image: url(../img/cover-3.svg); }
 
 footer {
-  margin-top: 12.5rem;
+  margin-top: 3.125rem;
   padding-bottom: 1.875rem; }
   footer .footer-top {
     margin-bottom: 0.9375rem; }
