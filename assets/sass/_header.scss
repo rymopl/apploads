@@ -1,6 +1,9 @@
 header {
     position: relative;
     text-align: center;
+    max-width: 1405px;
+    width: 100%;
+    margin: auto;
     img {
         max-width: 100%;
         display: block;
@@ -31,5 +34,30 @@ header {
     .btn {
         width: 310px;
         display: inline-block;
+    }
+    &:before {
+        content: '';
+        width: 37.7%;
+        height: 100%;
+        display: block;
+        background: url(../img/guy1.svg) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+
+    }
+
+    &:after {
+        content: '';
+        width: 29.5%;
+        height: 100%;
+        display: block;
+        background: url(../img/guy2.svg) no-repeat center center;
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        top: 0;
+
     }
 }
