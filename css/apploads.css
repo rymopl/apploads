@@ -1354,22 +1354,6 @@ footer {
       padding: 0;
       font-size: 0;
       text-align-last: right; }
-      footer .footer-top ul li {
-        margin-right: 0.4375rem;
-        display: inline-block; }
-        footer .footer-top ul li:last-child {
-          margin-right: 0; }
-        footer .footer-top ul li a {
-          font-size: 1.5rem;
-          text-decoration: none;
-          color: #081340;
-          -webkit-transition: 0.2s;
-          -moz-transition: 0.2s;
-          transition: 0.2s; }
-          footer .footer-top ul li a:hover {
-            color: #D59FA0; }
-          footer .footer-top ul li a i {
-            display: block; }
   footer .footer-bottom p {
     font-size: 0.875rem;
     letter-spacing: 1px;
@@ -1380,6 +1364,23 @@ footer {
       color: inherit; }
   footer .footer-bottom .text-align-right {
     text-align: right; }
+
+.social-link {
+  margin-right: 0.4375rem;
+  display: inline-block; }
+  .social-link:last-child {
+    margin-right: 0; }
+  .social-link a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #081340;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    transition: 0.2s; }
+    .social-link a:hover {
+      color: #D59FA0; }
+    .social-link a i {
+      display: block; }
 
 .podcast-item {
   margin-top: 3.75rem;
@@ -1394,3 +1395,51 @@ footer {
   .caster .thumb-small {
     margin-right: 1.0625rem;
     margin-bottom: 1.5625rem; }
+
+.fixed-sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: #fff;
+  height: 100%;
+  -webkit-transition: 2.2s, ease;
+  -moz-transition: 2.2s, ease;
+  transition: 2.2s, ease; }
+  .fixed-sidebar > div {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    max-width: 750px;
+    padding: 20px 65px; }
+  .fixed-sidebar h2 {
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 0.875rem;
+    letter-spacing: 13.5px;
+    margin: auto 0 0; }
+  .fixed-sidebar ul {
+    padding: 0;
+    margin: 0; }
+  .fixed-sidebar .social-link {
+    display: block;
+    margin-bottom: 2.5rem;
+    margin-right: 0; }
+    .fixed-sidebar .social-link:last-child {
+      margin-bottom: 0; }
+
+@media screen and (max-width: 39.9375em) {
+  .fixed-sidebar {
+    -webkit-transform: translateX(100%);
+    -moz-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    -o-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: 2.2s, ease;
+    -moz-transition: 2.2s, ease;
+    transition: 2.2s, ease; } }
+
+/* Small only */
+/* Medium and up */
+/* Medium only */
+/* Large and up */
+/* Large only */

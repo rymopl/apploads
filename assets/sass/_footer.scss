@@ -29,25 +29,7 @@ footer {
 
             // @extend .align-right;
             // display: flex;
-            li {
-                margin-right: rem-calc(7);
-                display: inline-block;
-                &:last-child {
-                    margin-right: 0;
-                }
-                a {
-                    font-size: rem-calc(24);
-                    text-decoration: none;
-                    color: $color-blue-dark;
-                    @include transition(0.2s);
-                    &:hover {
-                        color: $color-powder;
-                    }
-                    i {
-                        display: block;
-                    }
-                }
-            }
+            
         }
     }
 
@@ -69,6 +51,26 @@ footer {
         
         .text-align-right {
             text-align: right;
+        }
+    }
+}
+
+.social-link {
+    margin-right: rem-calc(7);
+    display: inline-block;
+    &:last-child {
+        margin-right: 0;
+    }
+    a {
+        font-size: rem-calc(24);
+        text-decoration: none;
+        color: $color-blue-dark;
+        @include transition(0.2s);
+        &:hover {
+            color: $color-powder;
+        }
+        i {
+            display: block;
         }
     }
 }

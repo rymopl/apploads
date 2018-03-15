@@ -1,0 +1,57 @@
+.fixed-sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #fff;
+    height: 100%;
+    @include transition(2.2s, ease);
+    > div {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        max-width: 750px;
+        padding: 20px 65px;
+    }
+    h2 {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        font-size: rem-calc(14);
+        letter-spacing: 13.5px;
+        margin: auto 0 0;
+
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    .social-link {
+        display: block;
+        margin-bottom: rem-calc(40);
+        margin-right: 0;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 39.9375em) {
+    .fixed-sidebar {
+        @include transform(translateX(100%));
+        @include transition(2.2s, ease);
+    }
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {}
+
+/* Medium and up */
+@media screen and (min-width: 40em) {}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
