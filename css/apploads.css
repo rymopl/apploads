@@ -1400,17 +1400,19 @@ footer {
   position: fixed;
   right: 0;
   top: 0;
-  background: #fff;
   height: 100%;
-  -webkit-transition: 2.2s, ease;
-  -moz-transition: 2.2s, ease;
-  transition: 2.2s, ease; }
+  display: flex;
+  width: calc((100vw - 1405px) / 2);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s; }
   .fixed-sidebar > div {
+    margin: auto;
     display: flex;
     flex-flow: column;
     height: 100%;
-    max-width: 750px;
-    padding: 20px 65px; }
+    max-height: 750px;
+    padding: 20px 0; }
   .fixed-sidebar h2 {
     writing-mode: vertical-rl;
     transform: rotate(180deg);
@@ -1427,16 +1429,16 @@ footer {
     .fixed-sidebar .social-link:last-child {
       margin-bottom: 0; }
 
-@media screen and (max-width: 39.9375em) {
+@media screen and (max-width: 100.9375em) {
   .fixed-sidebar {
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
     -o-transform: translateX(100%);
     transform: translateX(100%);
-    -webkit-transition: 2.2s, ease;
-    -moz-transition: 2.2s, ease;
-    transition: 2.2s, ease; } }
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    transition: 0.5s; } }
 
 /* Small only */
 /* Medium and up */
