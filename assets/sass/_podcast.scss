@@ -2,7 +2,7 @@
     margin-top: rem-calc(60);
     margin-bottom: rem-calc(100);
     h3 {
-        margin-top: rem-calc(10);
+        margin-top: 10px;
     }
     .simple-link {
         margin-top: rem-calc(22);
@@ -16,4 +16,11 @@
         margin-bottom: rem-calc(25);
     }
     
+}
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .podcast-item {
+        margin-top: 50px;
+    }
 }

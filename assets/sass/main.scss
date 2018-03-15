@@ -3,9 +3,10 @@
 @import '../../node_modules/foundation-sites/scss/util/flex';
 @import '../../node_modules/foundation-sites/scss/util/unit';
 @import '../../node_modules/foundation-sites/scss/components/flex';
+@import '../../node_modules/foundation-sites/scss/components/visibility';
 @include foundation-flex-grid;
 @include foundation-flex-classes;
-
+@include foundation-visibility-classes;
 @import 'mixins';
 @import 'variables';
 @import 'normalize';

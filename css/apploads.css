@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=EB+Garamond&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=EB+:400,500&subset=latin-ext");
 .row {
   max-width: 75rem;
   margin-right: auto;
@@ -608,6 +608,97 @@
   .large-flex-dir-column-reverse {
     flex-direction: column-reverse; } }
 
+.hide {
+  display: none !important; }
+
+.invisible {
+  visibility: hidden; }
+
+@media screen and (max-width: 39.9375em) {
+  .hide-for-small-only {
+    display: none !important; } }
+
+@media screen and (max-width: 0em), screen and (min-width: 40em) {
+  .show-for-small-only {
+    display: none !important; } }
+
+@media print, screen and (min-width: 40em) {
+  .hide-for-medium {
+    display: none !important; } }
+
+@media screen and (max-width: 39.9375em) {
+  .show-for-medium {
+    display: none !important; } }
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .hide-for-medium-only {
+    display: none !important; } }
+
+@media screen and (max-width: 39.9375em), screen and (min-width: 64em) {
+  .show-for-medium-only {
+    display: none !important; } }
+
+@media print, screen and (min-width: 64em) {
+  .hide-for-large {
+    display: none !important; } }
+
+@media screen and (max-width: 63.9375em) {
+  .show-for-large {
+    display: none !important; } }
+
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .hide-for-large-only {
+    display: none !important; } }
+
+@media screen and (max-width: 63.9375em), screen and (min-width: 75em) {
+  .show-for-large-only {
+    display: none !important; } }
+
+.show-for-sr,
+.show-on-focus {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+  border: 0; }
+
+.show-on-focus:active, .show-on-focus:focus {
+  position: static !important;
+  width: auto;
+  height: auto;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+  clip-path: none; }
+
+.show-for-landscape,
+.hide-for-portrait {
+  display: block !important; }
+  @media screen and (orientation: landscape) {
+    .show-for-landscape,
+    .hide-for-portrait {
+      display: block !important; } }
+  @media screen and (orientation: portrait) {
+    .show-for-landscape,
+    .hide-for-portrait {
+      display: none !important; } }
+
+.hide-for-landscape,
+.show-for-portrait {
+  display: none !important; }
+  @media screen and (orientation: landscape) {
+    .hide-for-landscape,
+    .show-for-portrait {
+      display: none !important; } }
+  @media screen and (orientation: portrait) {
+    .hide-for-landscape,
+    .show-for-portrait {
+      display: block !important; } }
+
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -623,7 +714,11 @@ html {
   /* 2 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
-  font-family: "proxima"; }
+  font-family: "proxima";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  box-sizing: border-box; }
 
 html {
   box-sizing: border-box; }
@@ -1090,7 +1185,7 @@ h4 {
   line-height: 1.125rem;
   letter-spacing: 6.22px;
   display: block;
-  margin-top: 0.5rem; }
+  margin-top: 8px; }
 
 .section-content {
   font-family: "EB Garamond";
@@ -1106,6 +1201,17 @@ h4 {
   color: #000;
   display: block; }
 
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .episode-label {
+    font-size: 14px;
+    margin-top: 20px; }
+  h3 {
+    font-size: 20px; }
+  h4 {
+    font-size: 14px;
+    line-height: 20px; } }
+
 header {
   position: relative;
   text-align: center;
@@ -1119,28 +1225,42 @@ header {
   header .header-content {
     position: absolute;
     width: 100%;
-    top: 50%;
+    top: 20%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
   header h1 {
-    font-family: "proxima";
-    font-size: 1.125rem;
+    font-family: "EB Garamond";
+    font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
-    letter-spacing: 7px; }
-  header h2 {
-    font-family: "EB Garamond";
-    font-size: 4rem;
-    line-height: 4.6875rem;
-    font-weight: 400;
-    color: #fff; }
+    letter-spacing: 0.04px;
+    margin-top: 1.625rem;
+    margin-bottom: 2.875rem; }
   header .btn {
     width: 310px;
     display: inline-block; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  header img {
+    width: 100%; }
+  header h1 {
+    margin-top: 10px;
+    margin-bottom: 33px;
+    line-height: 24px; }
+  header .header-content {
+    top: 7%; }
+    header .header-content img {
+      width: 50%; }
+  header .btn {
+    width: 250px; } }
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
   header:before {
     content: '';
     width: 37.7%;
@@ -1160,8 +1280,23 @@ header {
     background-size: cover;
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0; } }
 
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  header .header-content {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+    header .header-content img {
+      width: 30%; } }
+
+/* Large and up */
+/* Large only */
 .content-hader-section {
   text-align: center;
   position: relative; }
@@ -1218,10 +1353,50 @@ header {
     .about-me-section .section-content a {
       color: inherit; }
 
-body {
-  padding: 20px;
-  background: #ffffff; }
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .content-hader-section {
+    text-align: left; }
+    .content-hader-section h2 {
+      font-size: 16px;
+      margin-top: 30px; }
+    .content-hader-section p {
+      font-size: 20px;
+      margin-top: 0.75rem;
+      margin-bottom: 4rem; }
+    .content-hader-section:after {
+      left: 15px;
+      -webkit-transform: translateX(0%);
+      -moz-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+      -o-transform: translateX(0%);
+      transform: translateX(0%); } }
 
+/* Medium and up */
+/* Medium only */
+/* Large and up */
+/* Large only */
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  html {
+    font-size: 12px; }
+  .columns {
+    padding-right: 15px;
+    padding-left: 15px; } }
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+  body {
+    padding: 20px;
+    background: #ffffff; } }
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  html {
+    font-size: 12px; } }
+
+/* Large and up */
+/* Large only */
 .btn {
   text-decoration: none; }
 
@@ -1229,26 +1404,12 @@ body {
   font-size: 0.875rem;
   color: #fff;
   border: 2px solid #fff;
-  border-width: 4px 2px;
+  border-width: 5px 3px 3px 5px;
   background: transparent;
   position: relative;
-  padding: 14px 0; }
-  .btn-white:before {
-    height: calc(100% + 5px);
-    width: 3px;
-    content: '';
-    background: #fff;
-    position: absolute;
-    top: -4px;
-    left: -4px; }
-  .btn-white:after {
-    height: calc(100% + 5px);
-    width: 3px;
-    content: '';
-    background: #fff;
-    position: absolute;
-    bottom: -4px;
-    right: -4px; }
+  font-weight: 700;
+  padding: 14px 0;
+  box-shadow: 3px 3px 0 0 #fff; }
 
 .btn-large {
   font-size: 0.875rem;
@@ -1299,6 +1460,10 @@ body {
   width: 100%;
   margin-top: -0.625rem;
   margin-bottom: 3.75rem; }
+
+@media screen and (max-width: 39.9375em) {
+  .btn-white {
+    font-size: 14px; } }
 
 .thumb, .thumb-large, .thumb-small {
   border: 1px solid #E9E9E9;
@@ -1386,7 +1551,7 @@ footer {
   margin-top: 3.75rem;
   margin-bottom: 6.25rem; }
   .podcast-item h3 {
-    margin-top: 0.625rem; }
+    margin-top: 10px; }
   .podcast-item .simple-link {
     margin-top: 1.375rem; }
 
@@ -1395,6 +1560,11 @@ footer {
   .caster .thumb-small {
     margin-right: 1.0625rem;
     margin-bottom: 1.5625rem; }
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+  .podcast-item {
+    margin-top: 50px; } }
 
 .fixed-sidebar {
   position: fixed;

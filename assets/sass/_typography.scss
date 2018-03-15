@@ -41,7 +41,7 @@ h4 {
     line-height: rem-calc(18);
     letter-spacing: 6.22px;
     display: block;
-    margin-top: rem-calc(8);
+    margin-top: 8px;
 }
 
 .section-content {
@@ -58,4 +58,20 @@ h4 {
     letter-spacing: 0.04px;
     color: #000;
     display: block;
+}
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    .episode-label {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 20px;
+    }
 }

@@ -1,3 +1,4 @@
+
 header {
     position: relative;
     text-align: center;
@@ -12,52 +13,97 @@ header {
     .header-content {
         position: absolute;
         width: 100%;
-        top: 50%;
+        top: 20%;
         left: 50%;
-        @include transform(translate(-50%, -50%));
+        @include transform(translateX(-50%));
     }
     h1 {
-        font-family: $font-sans-serif;
-        font-size: rem-calc(18);
-        font-weight: 400;
-        color: #fff;
-        letter-spacing: 7px;
-    }
-
-    h2 {
         font-family: $font-serif;
-        font-size: rem-calc(64);
-        line-height: rem-calc(75);
+        font-size: rem-calc(24);
         font-weight: 400;
         color: #fff;
+        letter-spacing: 0.04px;
+        margin-top: rem-calc(26);
+        margin-bottom: rem-calc(46);
     }
     .btn {
         width: 310px;
         display: inline-block;
     }
-    &:before {
-        content: '';
-        width: 37.7%;
-        height: 100%;
-        display: block;
-        background: url(../img/guy1.svg) no-repeat center center;
-        background-size: cover;
-        position: absolute;
-        left: 0;
-        top: 0;
+    
+}
 
-    }
-
-    &:after {
-        content: '';
-        width: 29.5%;
-        height: 100%;
-        display: block;
-        background: url(../img/guy2.svg) no-repeat center center;
-        background-size: cover;
-        position: absolute;
-        right: 0;
-        top: 0;
-
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    header {
+        img {
+            width: 100%;
+        }
+        h1 {
+            // font-size: rem-calc(18);
+            margin-top: 10px;
+            margin-bottom: 33px;
+            line-height: 24px;
+        }
+        .header-content { 
+            top: 7%;
+            img {
+                width: 50%;
+            }
+        }
+        .btn {
+            width: 250px;
+        }
     }
 }
+
+/* Medium and up */
+@media screen and (min-width: 40em) {
+    header {
+        &:before {
+            content: '';
+            width: 37.7%;
+            height: 100%;
+            display: block;
+            background: url(../img/guy1.svg) no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+    
+        }
+    
+        &:after {
+            content: '';
+            width: 29.5%;
+            height: 100%;
+            display: block;
+            background: url(../img/guy2.svg) no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            right: 0;
+            top: 0;
+    
+        }
+    }
+}
+
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+    header {
+        .header-content {
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            img {
+                width: 30%;
+            }
+        }
+    }
+}
+
+/* Large and up */
+@media screen and (min-width: 64em) {}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {}
