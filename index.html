@@ -3,45 +3,53 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
+        <title>App Loads Podcast</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
+        <meta property="og:title" content="Apploads" />
+        <meta property="og:description" content="Apploads" />
+        <meta property="og:url" content="http://apploads.pl" />
+        <meta property="og:image" content="http://apploads.pl/img/ogimage.png" />
+        <link rel="apple-touch-icon" href="favicon.png">
         <link rel="stylesheet" href="css/apploads.css">
     </head>
     <body>
         <header>
-            <img class="show-for-medium" src="img/header-bg.svg" alt="">
+            <img class="show-for-medium fallback" src="img/header-bg.svg" alt="">
+            <div class="show-for-medium main-header-bg">
+                <object data="img/hero_image_elements/bg_anim.svg" type="image/svg+xml"></object>
+                <object class="guy1" data="img/hero_image_elements/guy_anim_01.svg" type="image/svg+xml"></object>
+                <!-- <object class="guy2" data="img/hero_image_elements/guy_anim_02.svg" type="image/svg+xml"></object> -->
+                <object class="bush" data="img/hero_image_elements/bush_anim.svg" type="image/svg+xml"></object>
+                <object class="flower" data="img/hero_image_elements/flower.svg" type="image/svg+xml"></object>
+            </div>
             <img class="show-for-small-only" src="img/header-bg-small.svg" alt="">
             <div class="header-content">
                 <img src="img/logo.svg" alt="">
                 <h1>Pierwszy polski podcast <br class="show-for-small-only"> o product designie.</h1>
-                <a href="" class="btn btn-white">Słuchaj teraz</a>
+                <a href="#firstPodcast" class="btn btn-white inner-link">Słuchaj teraz</a>
             </div>
         </header>
-        <div class="content-hader-section row">
+        <div class="grey-bg">
+        <div class="content-hader-section row ">
             <div class="small-12 medium-10 medium-offset-1 columns">
                 <h2>Dla kogo i po co?</h2>
-                <p class="section-content">App Loads to pierwszy polski podcast poświęcony UI i UX designowi. <span class="show-for-medium">Wśród zaproszony gości znajdziecie najlepszych polskich product designerów i nie tylko.</span> Audycje prowadzi <br><a href="">Michał Ptaszyński</a>.</p>
+                <p class="section-content">App Loads to pierwszy polski podcast poświęcony projektowaniu produktów. <span class="show-for-medium">Wśród zaproszony gości znajdziecie najlepszych polskich designerów i nie tylko.</span> <br>Audycje prowadzi <a  href="http://ptaszynski.me">Michał Ptaszyński</a>.</p>
             </div>
         </div>
 
-        <div class="podcast-item row">
+        <div id="firstPodcast" class="podcast-item row">
             <div class="small-12 medium-3 large-2 medium-offset-1 large-offset-2 columns">
                 <figure class="thumb-large podcast-thumb podcast-thumb-1"><span>01.</span></figure>
             </div>
             <div class="small-12 medium-7 large-6 columns">
                 <span class="episode-label">odcinek #1</span>
-                <h3>Jak założyć Software House, jak projektować dla Start-upów, dlaczego warto rozwijać swój produkt po godzinach.</h3>
+                <h3>O tym jakich programów do prototypowania warto się uczyć, jak wygląda praca nad poprawą UXa na Eduweb i czy można nauczyć się dobrego smaku.</h3>
                 <div class="caster">
                     <figure class="thumb-small show-for-medium">
-                        <img src="img/caster.png" alt="">
+                        <img src="img/caster_rog.png" alt="Grzegorz Rog">
                     </figure>
-                    <h4><span>Gościnnie:</span> Grzegorz Róg z serwisu <a href="">Eduweb</a></h4>
+                    <h4><span>Gościnnie:</span> Grzegorz Róg z serwisu <a href="http://eduweb.pl">Eduweb</a></h4>
                 </div>
                 <a href="" class="btn btn-large btn-blue">Słuchaj na Soundcloud <i class="icon icon-arrow"></i></a>
                 <a href="" class="simple-link">albo skocz do iTunes</a>
@@ -54,92 +62,123 @@
             </div>
             <div class="small-12 medium-7 large-6 columns">
                 <span class="episode-label">odcinek #2</span>
-                <h3>Jak założyć Software House, jak projektować dla Start-upów, dlaczego warto rozwijać swój produkt po godzinach.</h3>
+                <h3>O tym jak budowano Design Language System w Znanym Lekarzu, czy warto rozwijać swój produkt po godzinach i o różnicach między software housem a startupem.</h3>
                 <div class="caster">
                     <figure class="thumb-small show-for-medium">
-                        <img src="img/caster.png" alt="">
+                        <img src="img/caster_liberadzki.png" alt="Dawid Liberadzki">
                     </figure>
-                    <h4><span>Gościnnie:</span> Grzegorz Róg z serwisu <a href="">Eduweb</a></h4>
+                    <h4><span>Gościnnie:</span> Dawid Liberadzki z serwisu <a href="http://znanylekarz.pl">Znany Lekarz</a></h4>
                 </div>
-                <a href="" class="btn btn-large btn-blue">Słuchaj na Soundcloud <i class="icon icon-arrow"></i></a>
-                <a href="" class="simple-link">albo skocz do iTunes</a>
+                <span class="btn btn-large btn-grey">Dostępny od: 11 kwietnia 2018</span>
             </div>
         </div>
 
-        <div class="podcast-item row">
+        <div class="podcast-item podcast-item-extra-margin-bottom row">
             <div class="small-12 medium-3 large-2 medium-offset-1 large-offset-2 columns">
                 <figure class="thumb-large podcast-thumb podcast-thumb-1"><span>03.</span></figure>
             </div>
             <div class="small-12 medium-7 large-6 columns">
                 <span class="episode-label">odcinek #3</span>
-                <h3>Jak założyć Software House, jak projektować dla Start-upów, dlaczego warto rozwijać swój produkt po godzinach.</h3>
+                <h3>O tym jak zbudować silny zespół w software housie, czy warto robić redesigny produktów znanych marek, czym jest Dribbble dla 10 Clouds i jaka jest ścieżka rozwoju dla szefów działów dizjanowych.</h3>
                 <div class="caster">
                     <figure class="thumb-small show-for-medium">
-                        <img src="img/caster.png" alt="">
+                        <img src="img/caster_pirog.png" alt="Milosz Pirog">
                     </figure>
-                    <h4><span>Gościnnie:</span> Grzegorz Róg z serwisu <a href="">Eduweb</a></h4>
+                    <h4><span>Gościnnie:</span> Miłosz Piróg z <a href="http://10clouds.pl">10Clouds</a></h4>
                 </div>
-                <a href="" class="btn btn-large btn-blue">Słuchaj na Soundcloud <i class="icon icon-arrow"></i></a>
-                <a href="" class="simple-link">albo skocz do iTunes</a>
+                <span class="btn btn-large btn-grey">Dostępny od: 28 kwietnia 2018</span>
             </div>
         </div>
 
-        <div class="newsletter-section row">
-            <div class="small-12 columns">
-                <h2>Newsletter</h2>
-                <p class="section-content">Zapisz się i dostawaj powiadomienia <br>o nowych odcinach prosto na maila!</p>
+        <div class="row expanded">
+            <div class="columns small-12 ">
+                <div class="newsletter-section">
+                    <div class="newsletter-animation">
+                        <object class="newsbg" data="img/newsletter-bg.svg" type="image/svg+xml"></object>
+                    </div>
+                    <div class="row">
+                        <div class="small-12 columns">
+                            <h2>Newsletter</h2>
+                            <p class="section-content">Zapisz się i dostawaj powiadomienia <br>o nowych odcinach prosto na maila!</p>
+                        </div>
+                        <!-- Begin MailChimp Signup Form -->
+                        <div id="mc_embed_signup">
+                            <form  id="newsletterForm">                                
+                                <div class="form-inputs">
+                                    <input type="email" value="" name="EMAIL" class="required email" required placeholder="your@email.com" id="mce-EMAIL">
+                                        <div class="response hide">
+                                            <p>Twój adres jest ju na naszej liście.</p>
+                                        </div>
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d3c5c8710ed5ab65db85a2f4d_658fd7538c" tabindex="-1" value=""></div>
+                                    <button type="submit"  name="subscribe" id="mc-embedded-subscribe" class="btn btn-white">Dodaj swojego maila</button>
+                                </div>
+                                <div class="success hide">
+                                    <img src="img/gfx.svg" alt="">
+                                    <p>You're awesome! Thanks</p>
+                                </div>
+                            </form>
+                        </div>
+                        <!--End mc_embed_signup-->
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="podcast-item row">
+        <div class="podcast-item  podcast-extra-margin-bottom row">
             <div class="small-12 medium-3 large-2 medium-offset-1 large-offset-2 columns">
                 <figure class="thumb-large podcast-thumb podcast-thumb-1"><span>04.</span></figure>
             </div>
             <div class="small-12 medium-7 large-6 columns">
-                <span class="episode-label">odcinek #3</span>
-                <h3>Jak założyć Software House, jak projektować dla Start-upów, dlaczego warto rozwijać swój produkt po godzinach.</h3>
+                <span class="episode-label">odcinek #4</span>
+                <h3>O tym jak wygląda praca zdalna dla zagranicznego startupu i jak rozwijać produkt dla bardzo specyficznej grupy docelowej, a także jak pozyskiwać zlecenia na freelance.</h3>
                 <div class="caster">
                     <figure class="thumb-small show-for-medium">
-                        <img src="img/caster.png" alt="">
+                        <img src="img/caster_dlubacz.png" alt="Greg Dlubacz">
                     </figure>
-                    <h4><span>Gościnnie:</span> Grzegorz Róg z serwisu <a href="">Eduweb</a></h4>
+                    <h4><span>Gościnnie:</span> Greg Dłubacz z <a href="https://home.bimsync.com">Catenda AS</a></h4>
                 </div>
                 <span class="btn btn-large btn-grey">Dostępny od: 2 luty 2018</span>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row show-more-wrap">
             <div class="small-12 medium-10 large-8 medium-offset-1 large-offset-2 columns">
-                <button class="show-more btn btn-small btn-grey">Pokaż więcej odcinków</button>
+                <button class="show-more btn btn-small btn-grey">Wgraj więcej odcinków</button>
             </div>
         </div>
-
-        <div class="about-me-section row">
-            <div class="small-12 medium-8 medium-offset-2 columns">
-                <h2>Kim jestem?</h2>
-                <p class="section-content">Jestem Michał, UI / UX designer z 10 letnim doświadczeniem. W swojej codziennej pracy pomagam startupom poprawiać jakość ich produktów. Możesz sprawdzić mnie na <a href="">Dribbble</a>, <a href="">Linkedin</a>, <a href="">Medium</a> oraz <a href="">About.me</a>.</p>
+        </div>
+        <div class="row expanded">
+            <div class="columns small-12 ">
+                <div class="about-me-section">
+                        <object class="aboutanim" data="img/about_image_elements/frame_anim.svg" type="image/svg+xml"></object>
+                        <div class="row">
+                            <div class="small-12 medium-8 medium-offset-2 columns">
+                                <h2>Kim jestem?</h2>
+                                <p class="section-content">Jestem Michał, UI / UX designer z 10 letnim doświadczeniem. W swojej codziennej pracy pomagam startupom poprawiać jakość ich produktów. Możesz sprawdzić mnie na <a href="https://dribbble.com/michal_ptaszynski/">Dribbble</a>, <a href="https://www.linkedin.com/in/ptaszynski/">Linkedin</a>, <a href="https://medium.com/@michal_ptaszynski">Medium</a> oraz <a href="http://ptaszynski.me">About.me</a>.</p>
+                            </div>
+                        </div>
+                </div>
             </div>
         </div>
 
         <footer>
             <div class="row footer-top">
-                <div class="small-12 medium-6 text-align-left">
+                <div class="small-12 medium-6 text-align-left large-reset-order columns text-left small-order-2 medium-order-1">
                     <h2>AppLoads.pl</h2>
                 </div>
-                <div class="small-12 medium-6 text-align-righr">
+                <div class="small-12 medium-6 columns medium-text-right text-left small-order-1 medium-order-2">
                     <ul>
-                        <li class="social-link"><a href=""><i class="icon icon-facebook"></i></a></li>
-                        <li class="social-link"><a href=""><i class="icon icon-youtube"></i></a></li>
-                        <li class="social-link"><a href=""><i class="icon icon-soundcloud"></i></a></li>
-                        <li class="social-link"><a href=""><i class="icon icon-twitter"></i></a></li>
+                        <li class="social-link"><a href="https://www.facebook.com/apploads/"><i class="icon icon-facebook"></i></a></li>
+                        <li class="social-link"><a href="https://soundcloud.com/apploads"><i class="icon icon-soundcloud"></i></a></li>
+                        <li class="social-link"><a href="https://twitter.com/app_loads"><i class="icon icon-twitter"></i></a></li>
                     </ul>
                 </div>
             </div>
             <div class="row footer-bottom">
-                <div class="small-12 medium-6 text-align-left">
+                <div class="small-12 medium-6 text-align-left columns">
                     <p><span>© Kopiowanie bez zgody właściciela zabronione.</span><br>Powstałe w bólu i wielu frustracjach w 2018.</p>
                 </div>
-                <div class="small-12 medium-6 text-align-right">
+                <div class="small-12 medium-6 medium-text-right text-left columns">
                     <p><span>Masz pytanie albo chcesz wziąć udział w nagraniu?</span><br>Pisz śmiało na: <a href="mailto:hello@apploads.pl">hello@apploads.pl</a></p>
                 </div>
             </div>
@@ -148,20 +187,19 @@
         <aside class="fixed-sidebar">
             <div>
                 <ul>
-                    <li class="social-link"><a href=""><i class="icon icon-facebook"></i></a></li>
-                    <li class="social-link"><a href=""><i class="icon icon-youtube"></i></a></li>
-                    <li class="social-link"><a href=""><i class="icon icon-soundcloud"></i></a></li>
-                    <li class="social-link"><a href=""><i class="icon icon-twitter"></i></a></li>
+                    <li class="social-link"><a href="https://www.facebook.com/apploads/"><i class="icon icon-facebook"></i></a></li>
+                    <li class="social-link"><a href="https://soundcloud.com/apploads"><i class="icon icon-soundcloud"></i></a></li>
+                    <li class="social-link"><a href="https://twitter.com/app_loads"><i class="icon icon-twitter"></i></a></li>
                 </ul>
                 <h2>AppLoads.pl</h2>
             </div>
         </aside>
 
-        <!-- <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script> -->
+        <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script> -->
+        <!-- <script src="js/plugins.js"></script> -->
+        <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
         <!-- <script>

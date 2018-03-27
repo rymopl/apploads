@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="124px" height="81px" viewBox="0 0 124 81" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>gfx</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Main" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Destkop" transform="translate(-658.000000, -2723.000000)">
+            <g id="Content" transform="translate(150.000000, 876.000000)">
+                <g id="Newsletter" transform="translate(0.000000, 1600.000000)">
+                    <g id="State-2" transform="translate(472.000000, 246.000000)">
+                        <g id="gfx" transform="translate(36.000000, 0.000000)">
+                            <path d="M110.054249,32.4278535 C125.327682,37.5189977 128.094468,54.1429314 116.401734,73.5194625 C104.708999,92.8959936 64.6643121,47.9295091 61.9916871,62.6289465 C59.3190622,77.3283838 58.6509059,87.0166494 45.9559373,77.3283838 C33.2609686,67.6401183 -2.19599963,75.8580094 1.14478159,35.1004785 C4.48556281,-5.65705242 94.7808167,27.3367093 110.054249,32.4278535 Z" id="Path-29-Copy-2" fill="#D59FA0" transform="translate(62.275892, 48.112290) scale(1, -1) translate(-62.275892, -48.112290) "></path>
+                            <path d="M103.374949,14.1513031 C114.911852,17.9969373 117.001765,30.5539509 108.16957,45.1901598 C99.3373746,59.8263686 84.1964689,56.0748971 82.1776815,67.1782279 C80.1588941,78.2815588 79.6541972,85.5996632 70.0649569,78.2815588 C60.4757167,70.9634544 18.5858776,46.9565988 21.1093619,16.1700905 C23.6328461,-14.6164177 91.8380469,10.3056689 103.374949,14.1513031 Z" id="Path-29-Copy" fill="#F4BBBC" transform="translate(67.313968, 41.105811) scale(-1, 1) translate(-67.313968, -41.105811) "></path>
+                            <g id="check" transform="translate(46.000000, 28.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="4">
+                                <polyline id="Shape" points="32 0 10 22 0 12"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

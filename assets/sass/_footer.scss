@@ -12,10 +12,10 @@ footer {
     .footer-top {
         margin-bottom: rem-calc(15);
         h2 {
-            font-size: rem-calc(14);
+            font-size: 14px;
             font-weight: 600;
             letter-spacing: 1px;
-            line-height: rem-calc(24);
+            line-height: 24px;
             margin: 0;
             
         }
@@ -25,7 +25,7 @@ footer {
             margin: 0;
             padding: 0;
             font-size: 0;
-            text-align-last: right;
+            // text-align-last: right;
 
             // @extend .align-right;
             // display: flex;
@@ -36,9 +36,9 @@ footer {
     .footer-bottom {
         
             p {
-                font-size: rem-calc(14);
+                font-size: 14px;
                 letter-spacing: 1px;
-                line-height: rem-calc(18);
+                line-height: 18px;
                 span {
                     color: $color-silver;
                 }
@@ -46,23 +46,17 @@ footer {
                     color: inherit;
                 }
             }
-        .text-align-left {
-        }
-        
-        .text-align-right {
-            text-align: right;
-        }
     }
 }
 
 .social-link {
-    margin-right: rem-calc(7);
+    margin-right: 7px;
     display: inline-block;
     &:last-child {
         margin-right: 0;
     }
     a {
-        font-size: rem-calc(24);
+        font-size: 24px;
         text-decoration: none;
         color: $color-blue-dark;
         @include transition(0.2s);
@@ -71,6 +65,18 @@ footer {
         }
         i {
             display: block;
+        }
+    }
+}
+
+
+/* Small only */
+@media screen and (max-width: 39.9375em) {
+    footer{
+        .footer-top {
+            ul {
+                margin-bottom: 20px;
+            }
         }
     }
 }

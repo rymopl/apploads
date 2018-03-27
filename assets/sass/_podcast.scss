@@ -1,6 +1,15 @@
 .podcast-item {
-    margin-top: rem-calc(60);
-    margin-bottom: rem-calc(100);
+    padding-top: rem-calc(50);
+    padding-bottom: rem-calc(50);
+    position: relative;
+    background: #ffffff;
+    // @extend .grey-bg;
+    &.podcast-extra-margin-top {
+        padding-top: 100px;
+    }
+    &.podcast-extra-margin-bottom {
+        padding-bottom: 100px;
+    }
     h3 {
         margin-top: 10px;
     }
@@ -21,6 +30,13 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
     .podcast-item {
-        margin-top: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        &.podcast-extra-margin-top {
+            padding-top: 50px;
+        }
+        &.podcast-extra-margin-bottom {
+            padding-bottom: 50px;
+        }
     }
 }
